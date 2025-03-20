@@ -24,12 +24,11 @@
 <body>
     <audio id="hidden-audio" autoplay>
         <source src="./music/Blame_game.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
     </audio>
 
     <script>
         let audio = document.getElementById("hidden-audio");
-        audio.volume = 0.05; 
+        audio.volume = 0.1; 
     </script>
 
 <nav class="navbar"><button aria-expanded="false" class="navbar-toggle collapsed" data-target="#top_nav"
@@ -47,7 +46,7 @@
 </div>
     </div>
         <ul class="flags">
-            <li><img src="images/crown.png"></a></li>
+            <li><a href="theKing.html"><img src="images/crown.png"></a></li>
         </ul>
     </nav>
 
@@ -55,7 +54,7 @@
         <div class="main container">
             <div class="row">
                 <div class="col-md-offset-2 col-md-8" id="logo">
-                    <h1><img alt="UNDERTALE" class="img-responsive"
+                    <h1><img alt="MDF" class="img-responsive"
                                 src="images/logo.png"><span class="sr-only">My dark fantasy</span></a></h1>
                 </div>
             </div>
@@ -88,9 +87,10 @@
     <footer class="footer">
         <div class="container">
             <div class="col-xs-offset-3 col-xs-10">
-                <div id="footer-dog"><img alt="Doggo" src="images/horse.png"></div>
+                <div id="footer-dog"><img alt="Horsey" src="images/horse.png"></div>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><small>TROUBLESHOOTING</small> </a>
-                <a href="images/horse.png"><small style="font-size: 12;">PRIVACY</small></a>
+                <a href="images/horse.png">
+                <small style="font-size: 12;">PRIVACY</small></a>
 
                 <div class="social-icons col-xs-offset-5"><a
                         href="https://www.youtube.com/@tudorbuciuman"><img alt="YouTube"
@@ -99,7 +99,15 @@
             </div>
         </div>
     </footer>
-    <!--What are you doing?Looking for secrets?Don't put your nose where it doesn't belong.Or you might learn something you DON'T like...Hee hee hee.--><!-- Undertale and all associated characters (C) Toby Fox 2013-2021. Java by rich. --><!-- Cloudflare Pages Analytics -->
+    <audio id="horseSound" src="music/horse-neigh.mp3"></audio>
+
+    <script>
+        document.getElementById("footer-dog").addEventListener("click", function() {
+            var audio = document.getElementById("horseSound");
+            audio.play();
+        });
+    </script>
+    <!--What are you doing?Looking for secrets?Don't put your nose where it doesn't belong.Or you might learn something you DON'T like...Hee hee hee.-->
 </body>
 
 </html>
