@@ -15,21 +15,18 @@
     <meta content="#000000" name="theme-color">
     <title>My dark fantasy - Delicious Free Sample</title>
     <link href="css/css-bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/javascript.js " type="text/javascript">
     <link href="css/css-main.css" rel="stylesheet" type="text/css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <audio id="hidden-audio" autoplay>
-        <source src="music/Blame_game.mp3" type="audio/mpeg">
+        <source src="./music/Blame_game.mp3" type="audio/mpeg">
     </audio>
 
-    <script>
-        let audio = document.getElementById("hidden-audio");
-        audio.volume = 0.1; 
-    </script>
+
 
 <nav class="navbar"><button aria-expanded="false" class="navbar-toggle collapsed" data-target="#top_nav"
     data-toggle="collapse" type="button"><span class="menu-text">MENU</span><span class="icon-bar"></span><span
@@ -76,7 +73,7 @@
             <div class="row" style="font-size: smaller;">
                 <div class="col-md-offset-3 col-md-6">
                     <h6>NOTE: DEMO was created 100% by me using Unity.</h6>
-                    <h6>Therefore, it's the best thing ever.</h6>
+                    <h6>Therefore, the final product will be unreal.</h6>
                     <h6 class="text-muted">However, it's slightly special in some aspects...</h6><br>
                     <h6>NOTE: Save file may change..</h6>
                     <h6 class="text-muted">But the DEMO is so short you really won't care...</h6>
@@ -99,7 +96,7 @@
             </div>
         </div>
     </footer>
-    <audio id="horseSound" src="music/horse-neigh.mp3" ></audio>
+    <audio id="horseSound" src="music/horse-neigh.mp3"></audio>
 
     <script>
         document.getElementById("footer-dog").addEventListener("click", function() {
@@ -107,8 +104,14 @@
             audio.play();
         });
     </script>
-    <!--What are you doing?Looking for secrets?Don't put your nose where it doesn't belong.Or you might learn something you DON'T like...Hee hee hee.-->
+
     
+    <script>
+            let audio = document.getElementById("hidden-audio");
+            audio.volume = 0.1; 
+            audio.play();
+    </script>
+    <!--What are you doing?Looking for secrets?Don't put your nose where it doesn't belong.Or you might learn something you DON'T like...Hee hee hee.-->
 </body>
 
 </html>
